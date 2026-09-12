@@ -1,0 +1,149 @@
+/* Core Document Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f8fafc; /* Subtle light background color for the page */
+    color: #333;
+}
+
+/* --- Header / Navigation Bar --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+}
+
+.logo {
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    margin: 0 15px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.nav-links a.active {
+    color: #ff5722;
+    background-color: #fff1ec;
+    padding: 6px 16px;
+    border-radius: 20px;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-login {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* --- Main Layout Container --- */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Hero Card Section --- */
+.hero-section {
+    /* 1. Dimensions and Shape */
+    min-height: 520px;
+    border-radius: 30px; /* Gives the container its rounded corners */
+    overflow: hidden; /* Keeps the background image constrained to the corners */
+    
+    /* 2. Background Layer & Tint Overlay */
+    /* linear-gradient creates a dark transparent overlay from left to right so text is readable */
+    background-image: linear-gradient(to right, rgba(10, 15, 30, 0.9) 35%, rgba(10, 15, 30, 0.4) 100%), 
+                      url('https://unsplash.com'); /* Replace with your specific lifter image path */
+    background-size: cover;
+    background-position: center;
+    
+    /* 3. Positioning the interior elements */
+    display: flex;
+    align-items: center;
+    padding: 60px 80px;
+}
+
+.hero-content {
+    max-width: 550px; /* Keeps text clustered tightly on the left */
+    color: white;
+}
+
+.tagline {
+    color: #ff7a45; /* Bright orange subtitle font */
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cbd5e1; /* Light grayish/blue text for subtle reading contrast */
+    margin-bottom: 35px;
+}
+
+/* --- Interactive Action Buttons --- */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-orange {
+    display: inline-block;
+    background-color: #ff5722; /* Vivid brand orange primary fill button */
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background 0.2s ease;
+}
+
+.btn-orange:hover {
+    background-color: #e04818;
+}
+
+.btn-outline {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Translucent borders */
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    backdrop-filter: blur(5px); /* Creates the subtle glass blur layer inside the button */
+    transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+}
