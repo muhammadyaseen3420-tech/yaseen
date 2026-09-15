@@ -42,33 +42,33 @@ h4~p {
     border-radius: 7px;
 }
 
-*body {
+/* *body { */
     /* 1. Load your image */
-    background-image: url('c:\Users\asp\Downloads\in.jfif');
+    /* background-image: url('c:\Users\asp\Downloads\in.jfif'); */
 
     /* 2. Stop the image from repeating like a grid */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 
     /* 3. Keep the image centered */
-    background-position: center center;
+    /* background-position: center center; */
 
     /* 4. Force the image to stretch and cover the entire screen */
-    background-size: cover;
+    /* background-size: cover; */
 
     /* 5. Keep the background in place while you scroll */
-    background-attachment: fixed;
-}
+    /* background-attachment: fixed;
+} */
 
 /* Apply the perfect full-page background */
-body {
+/* body {
     background-image: url(../../../Downloads/g.jfif);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     margin: 0;
     padding: 0;
-}
+} */
 
 /* Style your text so it's readable over the image */
 /* h1, p {
@@ -77,3 +77,113 @@ body {
     font-family: sans-serif;
     margin-top: 50px;
 } */
+
+body {
+    background-image: url("../images/345.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+/* footer css */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    background: #062b72;
+    color: white;
+    padding: 50px 6%;
+}
+.acolor{
+    color: aliceblue;
+}
+.footer-top h2 {
+    font-size: 26px;
+    margin-bottom: 28px;
+}
+
+.footer-top h3 {
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.phone {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer button {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 13px 16px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer button:hover {
+    background: white;
+    color: #062b72;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.footer-links h3 {
+    font-size: 16px;
+}
+
+.footer-links a {
+    display: block;
+    color: white;
+    margin: 16px 0;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer-top h2 {
+        font-size: 21px;
+    }
+}
+
+
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+
+
+/* footer css */
