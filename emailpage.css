@@ -97,11 +97,11 @@
       background-color: #f8fafc;
     }
 
-    .input-group input:focus {
+    /* .input-group input:focus {
       border-color: #6366f1;
       background-color: #ffffff;
       box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
-    }
+    } */
 
     /* Form Actions & Buttons */
     .btn-login {
@@ -118,9 +118,9 @@
       transition: opacity 0.2s ease;
     }
 
-    .btn-login:hover {
+    /* .btn-login:hover {
       opacity: 0.9;
-    }
+    } */
 
     .forgot-password {
       display: block;
@@ -156,6 +156,6 @@
       transition: all 0.2s ease;
     }
 
-    .btn-register:hover {
+    /* .btn-register:hover {
       background-color: rgba(79, 70, 229, 0.05);
-    }
+    } */
