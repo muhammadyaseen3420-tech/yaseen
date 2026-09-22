@@ -37,7 +37,7 @@ h4~p {
 #button {
 
     background-color: blue;
-    border-color: blue;
+    /* border-color: blue; */
     /* border: red; */
     text-decoration: none;
     border: none;
